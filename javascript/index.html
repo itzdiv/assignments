@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment-1</title>
+    <style>
+        .disabled{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <form onsubmit="submitHandler(event)" id="form">
+
+        <label>Enter Email</label>
+        <input name="email" type="email" id="email" required/><br>
+
+        <label>Enter Password</label>
+        <input name="password" type="password" id="password" required minlength="6"><br>
+
+        <label>Sex</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+        <br>
+
+        <label>Roles</label>
+        <label>
+            <input type="radio" name="role" id="admin" value="Admin" required>ADMIN
+        </label>
+        <label>
+            <input type="radio" name="role" id="user" value="User">USER
+        </label>
+        <br>
+
+        
+        <label>Permissions</label>
+
+        <label>
+            <input type="checkbox" name="permission" id="perm1" value="perm1"> Perm1
+        </label><br>
+
+        <label>
+            <input type="checkbox" name="permission" id="perm2" value="perm2"> Perm2
+        </label><br>
+
+        <label>
+            <input type="checkbox" name="permission" id="perm3" value="perm3"> Perm3
+        </label><br>
+
+        <label>
+            <input type="checkbox" name="permission" id="perm4" value="perm4"> Perm4
+        </label><br>
+
+        <hr>
+        <button type="submit">Submit Form</button>
+    </form>
+
+    <div id="error" class="disabled"></div>
+
+    <div id="details" class="disabled">
+        <h1>Details</h1>
+        <p id="d-email"></p>
+        <p id="d-gender"></p>
+        <p id="d-role"></p>
+        <p id="d-permission"></p>
+        <button>Confirm Details</button>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
