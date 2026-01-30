@@ -1,0 +1,5 @@
+@import "tailwindcss";
+body{
+    background-image: url('../public/axiom-pattern.png');
+    object-fit: cover;
+}
